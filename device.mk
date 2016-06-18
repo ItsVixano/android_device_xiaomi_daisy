@@ -13,7 +13,8 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    fstab.qcom
+    fstab.qcom \
+    init.verity.rc
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/daisy/daisy-vendor.mk)
