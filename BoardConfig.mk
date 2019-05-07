@@ -20,6 +20,14 @@ TARGET_KERNEL_VERSION := 4.9
 
 DEVICE_PATH := device/xiaomi/daisy
 
+# A/B
+AB_OTA_UPDATER := true
+
+AB_OTA_PARTITIONS += \
+    boot \
+    system \
+    vendor
+
 # Filesystem
 TARGET_USERIMAGES_SPARSE_EXT_DISABLED := false
 TARGET_USES_MKE2FS := true
