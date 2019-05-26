@@ -30,7 +30,6 @@ on boot
     # add for goodix 
     chown system system /dev/goodix_fp
     chmod 0644 /dev/goodix_fp
-    
 
     # add for fpc 
     chown system system /sys/devices/platform/soc/soc:fpc1020/compatible_all
@@ -44,6 +43,9 @@ on boot
     chown system system /sys/devices/platform/soc/soc:fpc1020/fingerdown_wait
     chmod 0660 /sys/devices/platform/soc/soc:fpc1020/fingerdown_wait
 
+    # add for dt2w
+    chown system system /proc/touchpanel/wakeup_gesture
+    chmod 0660 /proc/touchpanel/wakeup_gesture
 
 on property:sys.fp.vendor=goodix
    setprop ro.boot.fpsensor goodix
