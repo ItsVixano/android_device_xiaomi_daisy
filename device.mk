@@ -61,7 +61,8 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    libdng_sdk.vendor
+    libdng_sdk.vendor \
+    libshims_libui
 
 # ConsumerIr
 PRODUCT_PACKAGES += \

@@ -12,7 +12,7 @@ vendor/etc/acdbdata/QRD/QRD_Speaker_cal.acdb
 vendor/etc/acdbdata/QRD/QRD_workspaceFile.qwsp
 
 # Camera - from daisy V10.0.20.0.PDLMIXM
-vendor/lib/hw/camera.msm8953.so|502c91901d64e4bb411e2d7acd7d362509da7942
+vendor/lib/hw/camera.msm8953.so|502c91901d64e4bb411e2d7acd7d362509da7942|7a99d105f3da6894e41323268da47b0f9072f0d0
 vendor/lib/libcapiv2svacnn.so|144c15376bfc72e6b924a9f1757ac07be5c7e484
 vendor/lib/libcapiv2vop.so|a868898ed069a1b3d4b85a37042077804ad81f6a
 vendor/lib/libFaceGrade.so|6f1626384251517f046aeec68dd897c3941215c9
