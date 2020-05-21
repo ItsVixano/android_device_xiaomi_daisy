@@ -952,11 +952,11 @@ vendor/lib64/libsensor_reg.so
 vendor/lib64/libsensor_user_cal.so
 vendor/lib64/sensors.ssc.so
 
-# Thermal - from daisy
-vendor/bin/thermal-engine
--vendor/lib/libthermalclient.so
--vendor/lib64/libthermalclient.so
-vendor/lib64/libthermalioctl.so
+# Thermal - from olive PKQ1.190319.001 V10.3.5.0.PCNCNXM
+vendor/bin/thermal-engine|7b59145e9e75cdc8b491f2ed7a04c0880899fc74
+-vendor/lib/libthermalclient.so|2c91276835c185e47a66916d24b3adc98b17e6eb
+-vendor/lib64/libthermalclient.so|faf92c38d52487cb8fa350f1ec786af17ac716cb
+vendor/lib64/libthermalfeature.so|8306e4bc55a4b9c7cb52a19fed11a9f48a604444
 
 # Time services - from daisy
 -vendor/app/TimeService/TimeService.apk
