@@ -12,6 +12,10 @@ audio.offload.video=true \
 ro.config.media_vol_steps=25 \
 ro.config.vc_call_vol_steps=7 \
 persist.vendor.btstack.enable.splita2dp=false \
+persist.vendor.audio.fluence.speaker=true \
+persist.vendor.audio.fluence.voicecall=true \
+persist.vendor.audio.fluence.voicerec=false \
+ro.vendor.audio.sdk.fluencetype=fluence \
 ro.vendor.audio.sdk.ssr=false \
 vendor.audio.flac.sw.decoder.24bit=true \
 vendor.audio.offload.buffer.size.kb=64 \
@@ -50,8 +54,10 @@ media.camera.ts.monotonic=1 \
 persist.camera.gyro.disable=0 \
 persist.camera.isp.clock.optmz=0 \
 persist.camera.stats.test=5 \
+persist.camera.dual.camera=0 \
 persist.vendor.qti.telephony.vt_cam_interface=1 \
-vidc.enc.dcvs.extra-buff-count=2
+vidc.enc.dcvs.extra-buff-count=2 \
+vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap
 
 # Cne/Dpm
 PRODUCT_PROPERTY_OVERRIDES += \
