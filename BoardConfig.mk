@@ -58,5 +58,8 @@ ENABLE_VENDOR_RIL_SERVICE := true
 # Security Patch Level
 VENDOR_SECURITY_PATCH := 2021-06-01
 
+# SEpolicy
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/vendor/sepolicy
+
 # Inherit from the proprietary version
 -include vendor/xiaomi/daisy/BoardConfigVendor.mk
