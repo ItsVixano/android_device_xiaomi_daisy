@@ -1,0 +1,2 @@
+# Goodix
+type gx_fpd_hwservice, hwservice_manager_type;
