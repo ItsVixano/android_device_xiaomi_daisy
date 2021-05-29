@@ -14,8 +14,8 @@
 # limitations under the License.
 #
 
-$(call inherit-product, vendor/xiaomi/tissot/tissot-vendor.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk)
+$(call inherit-product, vendor/xiaomi/daisy/daisy-vendor.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
@@ -29,7 +29,8 @@ AB_OTA_UPDATER := true
 
 AB_OTA_PARTITIONS += \
     boot \
-    system
+    system \
+    vendor
 
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
@@ -58,11 +59,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
     $(LOCAL_PATH)/audio/mixer_paths_mtp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_mtp.xml
 
-# Camera
-PRODUCT_PACKAGES += \
-    camera.msm8953 \
-    libmm-qcamera
-
 # ConsumerIr
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
@@ -73,14 +69,14 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.xiaomi_msm8953
 
 # Properties
--include device/xiaomi/tissot/prop.mk
+-include device/xiaomi/daisy/prop.mk
 
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.goodix.sh \
     init.recovery.qcom.rc \
     init.recovery.qcom.usb.rc \
-    init.tissot.rc
+    init.daisy.rc
 
 # Sensors
 PRODUCT_COPY_FILES += \
@@ -105,4 +101,5 @@ PRODUCT_PACKAGES_DEBUG += \
 
 # Verity
 PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/platform/soc/7824900.sdhci/by-name/system
+PRODUCT_VENDOR_VERITY_PARTITION := /dev/block/platform/soc/7824900.sdhci/by-name/vendor
 $(call inherit-product, build/target/product/verity.mk)
