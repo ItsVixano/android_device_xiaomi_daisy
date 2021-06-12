@@ -21,7 +21,6 @@ vendor/lib/libjpegdhw.so|5bf5861aee59948d239832ad147e9c8cae75fbd3
 vendor/lib/libjpegdmahw.so|3321467719535ffda2a6b4b4ae373810e8ecee26
 vendor/lib/libjpegehw.so|e001850751bbbcbcfe7040de994d734d9d388971
 vendor/lib/libmibokeh_625.so|aba585c120437fb3fc51bc974c6f59e0c0b7dc2a
-vendor/lib/libMiWatermark.so|f9c4466c7c3fd50ecaee5908c0f2ff16509ad63b
 vendor/lib/libmm-qcamera.so|86c9b278a8056457a8c397917d12d1ae7b49b2e9
 vendor/lib/libmmjpeg.so|6f5aadc0be44e65b5e262a41fabc0c434c73c392
 vendor/lib/libmmjpeg_interface.so|fcad942ea807f40701bfb00ffb52c645321c85ad
@@ -37,6 +36,10 @@ vendor/lib/libvideoutils.so|0d83f142a9d686baf3d5c19a15ee01f61d4d2747
 vendor/lib/libvidhance.so|9b9fd4b005fdfcbf90c641c6343c7af839c1bf82
 vendor/lib/libXMFD_AgeGender.so|52fe8abb44c6633b6e854a1ba3dffeee51e94e61
 vendor/lib/lib_lowlight.so|4d3badf9ff8c4b0bb1e0116052bafb0cf4c9ab18
+
+# Camera watermark
+vendor/lib/libMiWatermark.so
+vendor/lib/libft2vendor.so
 
 # Camera HIDL (Haxx need) - from daisy V10.0.20.0.PDLMIXM
 vendor/bin/hw/android.hardware.camera.provider@2.4-service|cc1e0e167eb26baf89c80cde770f2f33cdb1ae88
