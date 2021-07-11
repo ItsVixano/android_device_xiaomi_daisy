@@ -56,7 +56,9 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    libdng_sdk.vendor
+    camera.msm8953 \
+    libdng_sdk.vendor \
+    libmm-qcamera
 
 # ConsumerIr
 PRODUCT_PACKAGES += \
