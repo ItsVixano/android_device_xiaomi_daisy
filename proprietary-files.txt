@@ -647,7 +647,7 @@ vendor/lib/libmmcamera_tuning_lookup.so
 vendor/lib/libmmcamera_ubifocus_lib.so
 
 # Consumerir
-vendor/lib64/hw/consumerir.default.so
+vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.msm8953.so
 
 # Fingerprint - from daisy V10.0.20.0.PDLMIXM
 vendor/lib64/libgf_ca.so|d62fecde6046483566af2104d04a69af59a8b3d8|06df73aba535a79852c7a3168d5178a6283f57a1
