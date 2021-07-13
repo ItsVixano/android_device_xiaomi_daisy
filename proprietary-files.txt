@@ -1,4 +1,4 @@
-# Not appended blobs from daisy-user 10 QKQ1.191002.002 V11.0.20.0.QDLMIXM release-keys
+# Not appended blobs from daisy-user 10 QKQ1.191002.002 V11.0.21.0.QDLMIXM release-keys
 
 # Audio ACDB
 vendor/etc/acdbdata/adsp_avs_config.acdb

@@ -64,7 +64,7 @@ TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/wakeup_gesture"
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # Security Patch Level
-VENDOR_SECURITY_PATCH := 2021-06-01
+VENDOR_SECURITY_PATCH := 2021-07-01
 
 # SEpolicy
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/vendor/sepolicy
