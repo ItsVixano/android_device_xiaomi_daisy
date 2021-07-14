@@ -1,4 +1,4 @@
-#
++#
 # Copyright (C) 2017 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,11 +33,6 @@ TARGET_USERIMAGES_SPARSE_EXT_DISABLED := false
 TARGET_USES_MKE2FS := true
 TARGET_NO_RECOVERY := true
 TARGET_COPY_OUT_VENDOR := vendor
-
-# Fingerprint
-SOONG_CONFIG_XIAOMI_MSM8953_BIOMETRICS_HAL_MODULES := \
-    fingerprint,fpc \
-    gf_fingerprint,goodix
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
