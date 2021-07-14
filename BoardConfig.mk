@@ -16,7 +16,7 @@
 TARGET_KERNEL_VERSION := 4.9
 
 # Inherit from common msm8953-common
--include device/xiaomi/msm8953-common/BoardConfigCommon.mk
+include device/xiaomi/msm8953-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/xiaomi/daisy
 
@@ -69,5 +69,5 @@ VENDOR_SECURITY_PATCH := 2021-07-01
 # SEpolicy
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/vendor/sepolicy
 
-# Inherit from the proprietary version
--include vendor/xiaomi/daisy/BoardConfigVendor.mk
+# Inherit the proprietary files
+include vendor/xiaomi/daisy/BoardConfigVendor.mk

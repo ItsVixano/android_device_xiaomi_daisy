@@ -16,15 +16,14 @@
 
 AB_OTA_UPDATER := true
 
-$(call inherit-product, vendor/xiaomi/daisy/daisy-vendor.mk)
+# Inherit from msm8953-common
+$(call inherit-product, device/xiaomi/msm8953-common/msm8953.mk)
+
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
-
-# Inherit from msm8953-common
-$(call inherit-product, device/xiaomi/msm8953-common/msm8953.mk)
 
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
@@ -104,3 +103,6 @@ PRODUCT_PACKAGES_DEBUG += \
 PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/platform/soc/7824900.sdhci/by-name/system
 PRODUCT_VENDOR_VERITY_PARTITION := /dev/block/platform/soc/7824900.sdhci/by-name/vendor
 $(call inherit-product, build/target/product/verity.mk)
+
+# Inherit the proprietary files
+$(call inherit-product, vendor/xiaomi/daisy/daisy-vendor.mk)
