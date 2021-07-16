@@ -52,6 +52,9 @@ BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/wakeup_gesture"
 
+# Recovery
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/fstab.qcom
+
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
